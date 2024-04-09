@@ -1010,16 +1010,10 @@
 }
 
 .ourevents{
-  font-size: 14px; /* Set a default font size for mobile */
+  font-size: 50px;
+  text-align: center;
+  margin-top: 1rem;
 }
-
-/* Media query for desktop view */
-@media (min-width: 768px) {
-   .ourevents{
-    font-size: 16px; /* Increase font size for desktop */
-  }
-}
-
 section#Meta .copy {
   z-index: 0 !important;
 }
@@ -3255,6 +3249,21 @@ section#Meta h1 {
         display: flex;
         justify-content: right;
         align-self: center;
+      }
+      @media screen and (max-width:560px){
+        .mobile-view-logo{
+           margin-top: -50% !important;
+        }
+      }
+      @media screen and (max-width:410px){
+        .mobile-view-logo{
+           margin-top: -53% !important;
+        }
+      }
+      @media screen and (max-width:320px){
+        .mobile-view-logo{
+           margin-top: -57% !important;
+        }
       }
     </style>
     <script
@@ -7716,6 +7725,12 @@ section#Meta h1 {
         font-size: 28px;
     }
 
+    @media screen and (max-width:950px) {
+      #mobile-ourevents{
+        font-size: 4vw !important;
+        text-align: center !important;
+      }
+    }
     </style>
   </head>
   <body class="">
@@ -7820,12 +7835,13 @@ section#Meta h1 {
           </div>
           <div class="logo" style="margin-top: -5rem">
             <picture class="lazy-hidden"
-              ><source srcset="https://res.cloudinary.com/dsc5jtemn/image/upload/v1712599366/Sandhaan_hp7_2_si0h8g.png" type="image/webp" />
+              ><source srcset="./assets/sandhaanlogo.png" type="image/webp" />
               <br><br><br><br><br><br><br>
               <img
-                src="https://res.cloudinary.com/dsc5jtemn/image/upload/v1712599366/Sandhaan_hp7_2_si0h8g.png"
+                src="./assets/sandhaanlogo.png"
                 alt="Sandhaan logo"
                 class="hero-logo img-fluid d-none d-lg-block enter"
+                style="size: 50px;"
             /></picture>
           </div>
           <div data-v-476ad815="" class="video-controls d-lg-none">
@@ -8266,6 +8282,17 @@ section#Meta h1 {
               alt=""
               class="nav-bar-corner right img-fluid"
           /></picture>
+          <div class="logo mobile-view-logo" style="margin-top: -45%;">
+            <picture class="lazy-hidden"
+              ><source srcset="./assets/sandhaanlogo.png" type="image/webp" />
+              <br><br><br><br><br><br><br>
+              <img
+                src="./assets/sandhaanlogo.png"
+                alt="Sandhaan logo"
+                class="hero-logo img-fluid d-block d-lg-none enter"
+                style="size: 50px;"
+            /></picture>
+          </div>
         </div>
         <div id="Bottom" class="accolades">
           <div id="Video" class="d-none d-lg-block accolades">
@@ -8343,7 +8370,7 @@ section#Meta h1 {
                   type="image/png"
                 />
 
-                <div class="ourevents" style="font-size: larger">
+                <div class="ourevents" id="mobile-ourevents" >
                   OUR EVENTS
                 </div>
                 <!-- <img
@@ -8381,23 +8408,23 @@ section#Meta h1 {
               <figure class="game-info-card enter">
                 <div class="frame">
                   <img
-                    src="./assets/comingsoon.png"
+                    src="./assets/t2b.png"
                     alt=""
                     class="thumb"
                   />
                   <img
-                    src="./assets/comingsoon.png"
+                    src="./assets/t2b.png"
                     alt=""
                     class="icon top"
                   />
                   <img
-                    src="./assets/comingsoon.png"
+                    src="./assets/t2b.png"
                     alt=""
                     class="icon bot"
                   />
                 </div>
                 <figcaption>
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLScTco-rK23fLRNdUuWIUSREBQn86m4YXC7PAff3z9PYtSgjGQ/viewform?usp=sf_link
+                  <a href='https://docs.google.com/forms/d/e/1FAIpQLSdrg_EUXEZbCSrWfYtSfFXXVBxfJKQ8wKIedjMpFiF2Ik51vQ/viewform
                   '><button class="button-34" role="button">Register</button></a>
                 </figcaption>
               </figure>
@@ -8420,8 +8447,7 @@ section#Meta h1 {
                   />
                 </div>
                 <figcaption>
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLScTco-rK23fLRNdUuWIUSREBQn86m4YXC7PAff3z9PYtSgjGQ/viewform?usp=sf_link
-                  '><button class="button-34" role="button">Register</button></a>
+                  <a href=''><button class="button-34" role="button">Register</button></a>
                 </figcaption>
               </figure>
             </div>
@@ -8445,8 +8471,7 @@ section#Meta h1 {
                   />
                 </div>
                 <figcaption>
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLScTco-rK23fLRNdUuWIUSREBQn86m4YXC7PAff3z9PYtSgjGQ/viewform?usp=sf_link
-                  '><button class="button-34" role="button">Register</button></a>
+                  <a href=''><button class="button-34" role="button">Register</button></a>
                 </figcaption>
               </figure>
               <figure class="game-info-card enter">
@@ -8468,8 +8493,7 @@ section#Meta h1 {
                   />
                 </div>
                 <figcaption>
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLScTco-rK23fLRNdUuWIUSREBQn86m4YXC7PAff3z9PYtSgjGQ/viewform?usp=sf_link
-                  '><button class="button-34" role="button">Register</button></a>
+                  <a href=''><button class="button-34" role="button">Register</button></a>
               </figure>
               <figure class="game-info-card enter">
                 <div class="frame">
@@ -8491,8 +8515,7 @@ section#Meta h1 {
                 </div>
                 <figcaption>
                   <!-- <h3>Sandhaan'24</h3> -->
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLScTco-rK23fLRNdUuWIUSREBQn86m4YXC7PAff3z9PYtSgjGQ/viewform?usp=sf_link
-                  '><button class="button-34" role="button">Register</button></a>
+                  <a href=''><button class="button-34" role="button">Register</button></a>
                   <!-- <p>Sandhaan'24 is Going to be held in BIT Sindri</p> -->
                 </figcaption>
               </figure>
@@ -8518,8 +8541,7 @@ section#Meta h1 {
                   />
                 </div>
                 <figcaption>
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLScTco-rK23fLRNdUuWIUSREBQn86m4YXC7PAff3z9PYtSgjGQ/viewform?usp=sf_link
-                  '><button class="button-34" role="button">Register</button></a>
+                  <a href=''><button class="button-34" role="button">Register</button></a>
                 </figcaption>
               </figure>
               <figure class="game-info-card enter"  style="margin: auto;">
@@ -8542,8 +8564,7 @@ section#Meta h1 {
                 </div>
                 
                 <figcaption>
-                  <a href='https://docs.google.com/forms/d/e/1FAIpQLScTco-rK23fLRNdUuWIUSREBQn86m4YXC7PAff3z9PYtSgjGQ/viewform?usp=sf_link
-                  '><button class="button-34" role="button">Register</button></a>
+                  <a href=''><button class="button-34" role="button">Register</button></a>
 
                  
 
@@ -8883,7 +8904,7 @@ section#Meta h1 {
             <p class="mb-0 text-center pb-2 pt-3" style="font-size: 16px;" >Designed and developed by</p>
             <p class="mb-0 text-center pb-4 pt-1" style="font-size: 15px; color: #17c8ff; display: flex; flex-wrap: wrap; justify-content: center;;">
                     <span class="col-lg-3 col-sm-4 pr-1 pl-1">Aditya Prakash
-                        <a href="">
+                        <a href="tel:7004745324">
                             <i class="uil uil-linkedin" style="color: #17c8ff; font-size: 20px;"></i>
                         </a>
                         <a href="">
